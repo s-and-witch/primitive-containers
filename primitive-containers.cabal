@@ -42,7 +42,7 @@ library
     , primitive-unlifted >= 0.1 && <0.2
   if flag(checked)
     build-depends:
-        contiguous-checked >= 0.4 && < 0.6
+        contiguous-checked >= 0.4 && < 0.6.4
       , primitive-checked >= 0.6.4.1 && < 0.8
   else
     build-depends:
