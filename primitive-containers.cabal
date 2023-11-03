@@ -35,19 +35,19 @@ library
   hs-source-dirs:
       src
   build-depends:
-      base >=4.9 && <5
-    , primitive-sort >= 0.1.1 && < 0.2
-    , hashable >= 1.2.5
-    , deepseq >= 1.4
-    , primitive-unlifted >= 0.1 && <0.2
+      base 
+    , primitive-sort 
+    , hashable 
+    , deepseq 
+    , primitive-unlifted
   if flag(checked)
     build-depends:
-        contiguous-checked >= 0.4 && < 0.6.4
-      , primitive-checked >= 0.6.4.1 && < 0.8
+        contiguous-checked 
+      , primitive-checked 
   else
     build-depends:
-        contiguous >= 0.4 && < 0.7
-      , primitive >= 0.6.4 && < 0.8
+        contiguous
+      , primitive 
   exposed-modules:
     Data.Continuous.Set.Lifted
     Data.Diet.Map.Strict.Unboxed.Lifted
@@ -88,11 +88,11 @@ test-suite test
       base
     , HUnit
     , QuickCheck
-    , containers >= 0.5.10
+    , containers 
     , primitive
     , primitive-containers
-    , primitive-unlifted >= 0.1.1
-    , quickcheck-classes >= 0.6.2
+    , primitive-unlifted 
+    , quickcheck-classes 
     , tasty
     , tasty-hunit
     , tasty-quickcheck
@@ -108,9 +108,9 @@ benchmark gauge
   type: exitcode-stdio-1.0
   ghc-options: -Wall -O2
   build-depends:
-      base >= 4.8 && < 4.12
+      base 
     , primitive
-    , primitive-unlifted >= 0.1.1
+    , primitive-unlifted 
     , primitive-containers
     , ghc-prim
     , gauge
